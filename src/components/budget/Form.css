@@ -1,0 +1,60 @@
+.budget-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.budget-form button {
+  margin-top: 1rem;
+}
+.budget-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.budget-form form > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.budget-form form .form-row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.budget-form form .form-row label {
+  margin-right: 1rem;
+}
+input,
+select {
+  outline: none;
+  border: 1px solid #283334;
+  background-color: #1e1f1f;
+  padding: 0.75rem;
+  border-radius: 4px;
+  color: var(--color-text);
+  min-width: 150px;
+}
+.form-row select {
+  margin-bottom: 1rem;
+}
+input:focus,
+select:focus {
+  border-color: var(--color-primary);
+}
+input.error,
+select.error {
+  border-color: var(--color-error);
+}
+form p.error {
+  font-size: 0.75rem;
+  color: var(--color-error);
+  text-align: start;
+}
+.trans-header-filters select {
+  width: fit-content;
+  min-width: 50px;
+  background-color: #454747;
+}

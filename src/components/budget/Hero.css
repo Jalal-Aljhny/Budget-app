@@ -1,0 +1,64 @@
+.hero-bg {
+  width: 100vw;
+  height: 400px;
+  position: relative;
+}
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: var(--gradient-bg-transparet);
+  width: 100%;
+  height: 100%;
+}
+.hero-bg img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.hero-budget-number {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: -150px;
+  z-index: 1000;
+  position: relative;
+}
+.hero-budget-number .budget-number {
+  /* background-image: var(--gradient-bg-light); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  border-radius: 2px;
+  text-align: center;
+}
+.budget-number:nth-child(1) {
+  background-color: var(--color-primary);
+}
+.budget-number:nth-child(2) {
+  background-color: var(--color-success);
+}
+.budget-number:nth-child(3) {
+  background-color: var(--color-error);
+}
+.budget-number-icon {
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.budget-number-money div {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.budget-number-money small {
+  color: var(--color-text-light);
+}

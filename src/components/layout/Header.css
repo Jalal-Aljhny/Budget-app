@@ -1,0 +1,27 @@
+header {
+  padding: 1.5rem 0;
+  position: fixed;
+  z-index: 100;
+  transition-duration: 0.5s;
+  width: 100%;
+}
+header.scrolled {
+  padding: 1rem 0;
+  background-image: var(--gradient-bg);
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+header .header-brand img {
+  height: 2rem;
+}
+header .header-brand h1 {
+  font-size: 1.25rem;
+}
